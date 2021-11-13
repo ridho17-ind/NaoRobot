@@ -75,9 +75,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-[✨](https://telegra.ph/file/9c6e5b30022565cbe9f4a.jpg) ʜᴇʟʟᴏ  ᴍʏ ɴᴀᴍᴇ ɪs ɴᴀᴏ ᴛᴏᴍᴏʀɪ
+[✨](https://telegra.ph/file/8b5c1e0bba73beffd1192.jpg) ʜᴇʟʟᴏ  ᴍʏ ɴᴀᴍᴇ ɪs ꜰʟɪᴄᴋs​
 ɪ'ᴍ ᴀ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇ ʙᴏᴛ ꜰᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ!
-ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [Skyzu​](https://t.me/skyzuex) 
+ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [sᴋʏᴢᴏ​](https://t.me/xflskyzo) 
 """
 
 buttons = [
@@ -92,7 +92,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ​ ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
     ],
 ]
 
@@ -100,10 +100,10 @@ buttons = [
 HELP_STRINGS = """
 ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ."""
 
-nao_IMG = "https://telegra.ph/file/9c6e5b30022565cbe9f4a.jpg"
+nao_IMG = "https://telegra.ph/file/8b5c1e0bba73beffd1192.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @skyzuX \
+ You can support the project by contacting @xflskyzo \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -221,7 +221,7 @@ def start(update: Update, context: CallbackContext):
                                 {
                                     InlineKeyboardButton(
                                         text="sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ​",
-                                        url="https://t.me/skyzusupport",
+                                        url="https://t.me/flickssupport",
                                     )
                                 }
                             ]
@@ -373,9 +373,9 @@ def nao_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Source", url="https://github.com/Skyzu/NaoRobot"
+                    InlineKeyboardButton(text="Source", url="https://github.com/ridho17-ind"
                     ),
-                    InlineKeyboardButton(text="Dev", url="https://t.me/skyzuex")
+                    InlineKeyboardButton(text="Dev", url="https://t.me/xflskyzo")
                  ],
                  [
                     InlineKeyboardButton(text="🔙 Back", callback_data="nao_back")
@@ -399,7 +399,7 @@ def Source_about_callback(update, context):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi I'm *NaoRobot*
-                 \nHere is the [Source Code](https://github.com/Skyzu/NaoRobot) .""",
+                 \nHere is the [Source Code](https://github.com/ridho17-ind) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
