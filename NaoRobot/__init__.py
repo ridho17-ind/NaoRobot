@@ -37,7 +37,7 @@ logging.basicConfig(
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 LOGGER = logging.getLogger(__name__)
-LOGGER.info("NaoRobot is starting. | An NaoRobot Union Project. | Licensed under GPLv3.")
+LOGGER.info("Flicks Robot is starting. | An Flicks Robot Union Project. | Licensed under GPLv3.")
 LOGGER.info("Not affiliated to Shie Hashaikai or Villain in any way whatsoever.")
 
 # enable logging
