@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from pyrogram.types import *
 
 from NaoRobot.conf import get_str_key
-from NaoRobor import pbot
+from NaoRobot import pbot
 
 REPO_TEXT = "**A Powerful [BOT](https://telegra.ph/file/e1ff8620519d6378ac1f0.jpg) To Make Your Groups Secured And Organized !** \n\n**『 Owner 』 : 『 [Skyzo](t.me/xflskyzo) 』**\n**╭──────────────**\n**┣─ » Python ~ 3.8.6**\n**┣─ » Update ~ Recently**\n**╰──────────────**\n\n**»» 『 @SadRoomsInfo 』 ««**"
   
