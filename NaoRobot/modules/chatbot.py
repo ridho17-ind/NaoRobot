@@ -56,17 +56,17 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("NaoRobot AI Already Activated In This Chat")
+            await lel.edit("**Flicks Robot AI Already Activated In This Chat**")
             return
-        await lel.edit(f"NaoRobot AI Activated by {message.from_user.mention()} For Users In The Chat **{message.chat.title}**")
+        await lel.edit(f"**Flicks Robot AI Activated By {message.from_user.mention()} For Users In The Chat** **{message.chat.title}**")
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("NaoRobot AI Was Not Activated In This Chat")
+            await lel.edit("**Flicks Robot AI Was Not Activated In This Chat**")
             return
-        await lel.edit(f"NaoRobot AI Deactivated by {message.from_user.mention()} For Users In The Chat **{message.chat.title}**")
+        await lel.edit(f"**Flicks Robot AI Deactivated By {message.from_user.mention()} For Users In The Chat** **{message.chat.title}**")
 
     elif status == "EN" or status == "en" or status == "english":
         if not chat_id in en_chats:
@@ -105,13 +105,13 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("nao", "Aco")
-        test = test.replace("Nao", "Aco")
+        test = test.replace("flicks", "Aco")
+        test = test.replace("Flicks", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Nao")
-        response = response.replace("aco", "Nao")
+        response = response.replace("Flicks", "Flicks")
+        response = response.replace("flicks", "Flicks")
 
         pro = response
         try:
@@ -162,15 +162,15 @@ async def hmm(client, message):
             except:
                 return
 
-        test = test.replace("Nao", "Aco")
-        test = test.replace("Nao", "Aco")
+        test = test.replace("Flicks", "Aco")
+        test = test.replace("Flicks", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Nao")
-        response = response.replace("aco", "Nao")
-        response = response.replace("Luna", "Nao")
-        response = response.replace("luna", "Nao")
+        response = response.replace("Aco", "Flicks")
+        response = response.replace("aco", "Flicks")
+        response = response.replace("Luna", "Flicks")
+        response = response.replace("luna", "Flicks")
         pro = response
         if not "en" in lan and not lan == "":
             try:
@@ -230,8 +230,8 @@ async def inuka(client, message):
         except:
             return
 
-    test = test.replace("Nao", "Aco")
-    test = test.replace("Nao", "Aco")
+    test = test.replace("Flicks", "Aco")
+    test = test.replace("Flicks", "Aco")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
     response = response.replace("Aco", "Nao")
@@ -249,7 +249,7 @@ async def inuka(client, message):
 
 
 @pbot.on_message(
-    filters.regex("Nao|nao|robot|sena|NAO")
+    filters.regex("Flicks|flicks|robot|skyzo|FLICKS")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -301,11 +301,11 @@ async def inuka(client, message):
         except:
             return
 
-    test = test.replace("Nao", "Aco")
-    test = test.replace("Nao", "Aco")
+    test = test.replace("Flicks", "Aco")
+    test = test.replace("Flicks", "Aco")
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Nao")
-    response = response.replace("aco", "Nao")
+    response = response.replace("Aco", "Flicks")
+    response = response.replace("aco", "Flicks")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -323,7 +323,7 @@ async def inuka(client, message):
 
 __help__ = """
 *──「 Help for the Chatbot module 」──*
-• NaoRobot AI is the only ai system which can detect & reply upto 200 language's
+• Flicks Robot AI is the only ai system which can detect & reply upto 200 language's
 ✪ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
 ✪ /chatbot EN : Enables English only chatbot.
 """
