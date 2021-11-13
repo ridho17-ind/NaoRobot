@@ -220,13 +220,8 @@ def start(update: Update, context: CallbackContext):
                             [
                                 {
                                     InlineKeyboardButton(
-                                        text="sᴜᴘᴘᴏʀᴛ​",
+                                        text="sᴜᴘᴘᴏʀᴛ ​ᴄʜᴀᴛ​",
                                         url="https://t.me/flickssupport",
-                                 ],
-                                 [
-                                     InlineKeyboardButton(
-                                        text="ᴄʜᴀɴɴᴇʟ​",
-                                        url="https://t.me/SadRoomsInfo",
                                     )
                                 }
                             ]
