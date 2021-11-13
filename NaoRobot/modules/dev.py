@@ -40,7 +40,7 @@ def leave(update: Update, context: CallbackContext):
             bot.leave_chat(int(chat_id))
         except TelegramError:
             update.effective_message.reply_text(
-                "**Pffftttt, I Could Not Leave That Group(Dunno Why Tho)**."
+                "**Pffftttt, I Could Not Leave That Group..**"
             )
             return
         with suppress(Unauthorized):
